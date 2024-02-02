@@ -1,5 +1,11 @@
-function refreshWeatherData(response) {}
+function refreshWeatherData(response) {
+  let temperatureElement = document.querySelector("#temperature");
+  let temperature = response.data.temperature.current;
+  let cityElement = document.querySelector("#city");
 
+  cityElement.innerHTML = response.city.data;
+  temperatureElement = Math.round(temperature);
+}
 function searchCity(city) {
   // make the api call and update the interface
   // separation of concerns, functions to do one thing and do it well
@@ -19,3 +25,5 @@ function handleSearch(event) {
 
 let searchFormElement = document.querySelector("#search-Form");
 searchFormElement.addEventListener("submit", handleSearch);
+
+searchCity("South Africa");
