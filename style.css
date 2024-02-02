@@ -104,7 +104,6 @@ ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
-}
 
 li {
   background-color: rgba(255, 255, 255, 0.4);
