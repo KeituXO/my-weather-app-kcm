@@ -15,7 +15,7 @@ a {
 
 .weather-forecast {
   /* background-color: 1px solid #abcecf; */
-  background: rgba(255, 0, 0, 0.3) url("images/Clouds.avif");
+  background: rgba(255, 0, 0, 0.3) url("images\Clouds.avif");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 600px;
@@ -37,7 +37,7 @@ a {
   font-size: 16px;
 }
 
-.search-button {
+.search-form-button {
   display: inline;
   background: rgba(255, 255, 255, 0.6);
   padding: 10px;
@@ -105,31 +105,31 @@ ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
+}
 
-  li {
-    background-color: rgba(255, 255, 255, 0.4);
-    color: rgba(255, 255, 255, 0.8);
-    border: none;
-    margin: 20px 0 2px 0;
-    margin-left: 0;
-    padding: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    border-radius: 10px;
-    width: 80px;
-    height: 100px;
-    text-align: center;
-  }
+li {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.8);
+  border: none;
+  margin: 20px 0 2px 0;
+  margin-left: 0;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 80px;
+  height: 100px;
+  text-align: center;
+}
 
-  .icon {
-    font-size: 30px;
-  }
+.icon {
+  font-size: 30px;
+}
 
-  footer {
-    border-top: 1px solid #f9f7fe;
-    padding: 20px 0 0 0;
-    text-align: center;
-    font-size: 13px;
-    color: rgba(255, 255, 255, 1);
-  }
+footer {
+  border-top: 1px solid #f9f7fe;
+  padding: 20px 0 0 0;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 1);
 }
