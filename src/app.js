@@ -17,9 +17,10 @@ function refreshWeatherData(response) {
   temperatureElement.innerHTML = Math.round(temperature);
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon" />`;
 }
+
 function formatDate(date) {
-  let hours = date.getHours();
   let minutes = date.getMinutes();
+  let hours = date.getHours();
   let days = [
     "Sunday",
     "Monday",
@@ -38,11 +39,9 @@ function formatDate(date) {
 }
 
 function searchCity(city) {
-  // make the api call and update the interface
-  // separation of concerns, functions to do one thing and do it well
   let apiKey = "t45f96b34088a1ob056e37a2a463d49d";
   let apiURL = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
-  axios.get(apiURL).then(updateWeather);
+  axios.get(apiURL).then(refreshWeatherData); // corrected function name
 }
 
 function handleSearch(event) {
@@ -51,10 +50,7 @@ function handleSearch(event) {
   searchCity(searchInput.value);
 }
 
-// let cityElement = document.querySelector("#city");
-// cityElement.innerHTML = searchInput.value;
-
-let searchFormElement = document.querySelector("search-form-button");
+let searchFormElement = document.querySelector("#search-form"); // corrected selector
 searchFormElement.addEventListener("submit", handleSearch);
 
 searchCity("Paris");

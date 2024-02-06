@@ -17,10 +17,9 @@
     <div class="weather-forecast">
       <header>
         <div class="search-form">
-          <form action="submit" id="search-form">
+          <form id="search-form">
             <input
-              type="text"
-              id="search-city"
+              type="search"
               placeholder="Enter a city..."
               required
               class="search-form-input"
@@ -33,11 +32,10 @@
       <main>
         <div class="weather-app-data">
           <div class="temperature-container-2">
-            <h1 id="city" class="city"></h1>
+            <h1 id="city" class="city">South Africa</h1>
 
-            <p>
-              <span id="time"></span>,
-              <span id="description">sunny & hot</span> <br />
+            <p class="details">
+              <span id="time"></span>, <span id="description"></span> <br />
               Humidity: <strong id="humidity"></strong>, Wind:
               <strong id="wind-speed"></strong>
               <br />
@@ -49,44 +47,6 @@
             <div class="weather-unit">&degC | &degF</div>
           </div>
         </div>
-
-        <ul>
-          <li>
-            06:00 <br />
-            Fri <br />
-            <div class="icon">🌤️</div>
-            <br />
-            24 &degC 15 &degC
-          </li>
-          <li>
-            09:00 <br />
-            Sat <br />
-            <div class="icon">🌥️</div>
-            <br />
-            24 &degC 15 &degC
-          </li>
-          <li>
-            12:00 <br />
-            Sun <br />
-            <div class="icon">🌧️</div>
-            <br />
-            25 &degC 16 &degC
-          </li>
-          <li>
-            15:00 <br />
-            Mon <br />
-            <div class="icon">🌧️</div>
-            <br />
-            28 &degC 16 &degC
-          </li>
-          <li>
-            18:00 <br />
-            Tue <br />
-            <div class="icon">🌥️</div>
-            <br />
-            29 &degC 17 &degC
-          </li>
-        </ul>
       </main>
 
       <footer>
